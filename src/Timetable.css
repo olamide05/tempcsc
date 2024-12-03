@@ -1,0 +1,85 @@
+.timetable-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-task-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Timetable Grid */
+.timetable-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr); /* Time labels + 7 days */
+    grid-auto-rows: 50px; /* Height of each hour */
+    border: 1px solid #ccc;
+    gap: 1px;
+    background-color: #f4f4f4;
+}
+
+.header-row {
+    display: contents;
+}
+
+.day-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-row {
+    display: contents;
+}
+
+.time-label {
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+}
+
+.time-cell {
+    background-color: black;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+/* Task Blocks */
+.task-block {
+    background-color: rgba(86, 202, 133, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+
+

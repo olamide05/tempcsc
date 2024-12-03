@@ -1,0 +1,86 @@
+/* Common footer styles */
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Light mode footer styles */
+.light-footer {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.light-footer input {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.light-footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.light-footer button:hover {
+    background-color: #0056b3;
+}
+
+.light-footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.light-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode footer styles */
+.dark-footer {
+    background-color: #444;
+    color: #f9f9f9;
+}
+
+.dark-footer input {
+    background-color: #444;
+    color: #f9f9f9;
+    border: 1px solid #666;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.dark-footer button {
+    background-color: #555;
+    color: #f9f9f9;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dark-footer button:hover {
+    background-color: #333;
+}
+
+.dark-footer a {
+    color: #66ccff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.dark-footer a:hover {
+    text-decoration: underline;
+}

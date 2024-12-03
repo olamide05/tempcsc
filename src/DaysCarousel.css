@@ -1,0 +1,46 @@
+
+/* DaysCarousel.css */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #ccc;
+    --bg-color: #f9f9f9;
+    --hover-color: #ddd;
+    --text-color: white;
+    --padding: 10px;
+    --margin: 5px;
+    --border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    padding: var(--padding);
+    margin: var(--margin);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    text-align: center;
+    min-width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.carousel-item:focus {
+    background-color: var(--hover-color);
+}
+
+.carousel-item:hover {
+    background-color: var(--hover-color);
+}
+
+.carousel-item.selected {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}

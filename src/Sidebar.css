@@ -1,0 +1,67 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    height: 100%;
+    width: 250px;
+    background-color: #222;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth transition */
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+/* Sidebar when open */
+.sidebar.open {
+    left: 0; /* Slide into view */
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Links inside the sidebar */
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px 15px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Hamburger button */
+.hamburger {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 10px;
+}
+
+/* Adjusting dark mode for the sidebar */
+.dark-mode .sidebar {
+    background-color: #121212;
+    color: #fff;
+}

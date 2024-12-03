@@ -1,0 +1,52 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.dark-mode button:hover {
+  background-color: #444;
+}
+
+.timetable, .notes {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.dark-mode .timetable, .dark-mode .notes {
+  background-color: #333;
+  border: 1px solid #555;
+}
